@@ -114,14 +114,19 @@ const Footer = () => {
                 Limited seats available for December and January intake. Secure your spot today!
               </p>
               <Button className="w-full bg-gradient-to-r from-blue-600 to-red-500 hover:from-blue-700 hover:to-red-600 mb-3">
-                <Phone className="mr-2 w-4 h-4" />
-                Call to Enroll
+                <Link href={'/contact'} className="flex items-center">
+                  <Phone className="mr-2 w-4 h-4" />
+                  <p className="">Call to Enroll</p>
+                </Link>
               </Button>
               <Button
+                asChild
                 variant="outline"
-                className="w-full border-gray-600 text-white hover:bg-gray-800"
+                className="w-full border-gray-600  hover:bg-gray-800"
               >
-                View Course Dates
+                <Link href={'/course'} className="">
+                  <p className="text-black">View Course Dates</p>
+                </Link>
               </Button>
             </div>
           </div>

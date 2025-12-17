@@ -12,7 +12,7 @@ const slides = [
     title: 'Professional Driving School',
     subtitle: 'Get Your License with Expert Training',
     description: 'Certified instructors with 20+ years experience',
-    image: '/hero-1.jpg',
+    image: '/hero-1.jpeg',
     cta: 'Book a Lesson',
     stats: [
       { icon: Shield, value: '99%', label: 'Pass Rate' },
@@ -25,7 +25,7 @@ const slides = [
     title: 'CDL Truck Driving School',
     subtitle: 'Start Your Career in Trucking',
     description: 'Complete CDL training with job placement assistance',
-    image: '/hero-2.jpg',
+    image: '/hero-2.jpeg',
     cta: 'Learn More',
     stats: [
       { icon: Shield, value: '100%', label: 'Job Placement' },
@@ -38,7 +38,7 @@ const slides = [
     title: 'Defensive Driving Courses',
     subtitle: 'Safe Driving for All Ages',
     description: 'Reduce insurance rates and improve safety',
-    image: '/hero-3.jpg',
+    image: '/hero-3.jpeg',
     cta: 'View Courses',
     stats: [
       { icon: Shield, value: '35%', label: 'Insurance Discount' },
@@ -105,7 +105,7 @@ export function HeroCarousel() {
             className="absolute inset-0 bg-cover bg-center"
             style={{ backgroundImage: `url(${slides[currentSlide].image})` }}
           >
-            <div className="absolute inset-0 bg-gradient-to-r from-black/70 to-black/40" />
+            <div className="absolute inset-0 bg-gradient-to-r from-black/50 to-black/10" />
           </div>
 
           <div className="relative h-full flex items-center">

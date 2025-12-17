@@ -9,8 +9,8 @@ export default function Home() {
   return (
     <>
       <HeroCarousel />
-      <ServicesSection />
       <FeaturesSection />
+      <ServicesSection />
       <Testimonials />
       <CallToAction />
       <ContactForm />
