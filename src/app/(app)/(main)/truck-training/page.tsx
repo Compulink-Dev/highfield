@@ -42,7 +42,7 @@ const TruckTraining = () => {
   return (
     <div className="min-h-screen bg-gradient-to-b from-gray-50 to-white">
       {/* Hero Section */}
-      <section className="relative py-20 bg-gradient-to-r from-blue-900 via-blue-800 to-green-900 overflow-hidden">
+      <section className="relative py-20 bg-gradient-to-r from-blue-900 via-blue-800 to-red-900 overflow-hidden">
         <div className="absolute inset-0 bg-black/50" />
         <div className="container relative mx-auto px-4">
           <motion.div
@@ -54,7 +54,7 @@ const TruckTraining = () => {
               🚛 MOST POPULAR COURSE
             </Badge>
             <h1 className="text-4xl md:text-6xl font-bold text-white mb-6">
-              2-Week Intensive <span className="text-green-300">Truck Driver</span> Training
+              2-Week Intensive <span className="text-red-300">Truck Driver</span> Training
             </h1>
             <p className="text-xl text-gray-200 mb-8">
               Become a certified professional truck driver in just 14 days. Our comprehensive
@@ -62,7 +62,7 @@ const TruckTraining = () => {
               across Zimbabwe.
             </p>
             <div className="flex flex-wrap gap-4">
-              <Button size="lg" className="bg-gradient-to-r from-green-500 to-green-600">
+              <Button size="lg" className="bg-gradient-to-r from-red-500 to-red-600">
                 📞 Enroll Now: +263 77 305 6222
               </Button>
               <Button size="lg" variant="outline" className="border-white text-black">
@@ -128,7 +128,7 @@ const TruckTraining = () => {
                     <div className="ml-11 grid grid-cols-1 md:grid-cols-2 gap-3">
                       {module.topics.map((topic, idx) => (
                         <div key={idx} className="flex items-center text-gray-700">
-                          <CheckCircle className="w-4 h-4 text-green-500 mr-2 flex-shrink-0" />
+                          <CheckCircle className="w-4 h-4 text-red-500 mr-2 flex-shrink-0" />
                           {topic}
                         </div>
                       ))}
@@ -140,7 +140,7 @@ const TruckTraining = () => {
           </div>
 
           {/* Upcoming Batches */}
-          <div className="bg-gradient-to-r from-blue-50 to-green-50 rounded-2xl p-8 border border-blue-200">
+          <div className="bg-gradient-to-r from-blue-50 to-red-50 rounded-2xl p-8 border border-blue-200">
             <h2 className="text-3xl font-bold mb-8 text-center">Upcoming Training Batches</h2>
             <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-4">
               {upcomingBatches.map((batch, index) => (
@@ -159,7 +159,7 @@ const TruckTraining = () => {
                       className={
                         batch.status === 'Filling Fast'
                           ? 'bg-red-100 text-red-700'
-                          : 'bg-green-100 text-green-700'
+                          : 'bg-red-100 text-red-700'
                       }
                     >
                       {batch.status}

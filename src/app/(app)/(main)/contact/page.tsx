@@ -64,7 +64,7 @@ const Contact = () => {
       title: 'Email Us',
       details: 'chancechikowore@gmail.com',
       subtitle: 'Response within 2 hours',
-      color: 'from-green-500 to-green-600',
+      color: 'from-red-500 to-red-600',
     },
     {
       icon: <MapPin className="w-6 h-6" />,
@@ -85,7 +85,7 @@ const Contact = () => {
   return (
     <div className="min-h-screen bg-gradient-to-b from-gray-50 to-white">
       {/* Hero */}
-      <section className="relative py-20 bg-gradient-to-r from-blue-800 to-green-700">
+      <section className="relative py-20 bg-gradient-to-r from-blue-800 to-red-700">
         <div className="container mx-auto px-4">
           <motion.div
             initial={{ opacity: 0, y: 20 }}
@@ -266,9 +266,9 @@ const Contact = () => {
               viewport={{ once: true }}
               className="space-y-8"
             >
-              <Card className="border-green-100">
+              <Card className="border-red-100">
                 <CardContent className="p-0 overflow-hidden">
-                  <div className="h-64 bg-gradient-to-br from-blue-100 to-green-100 flex items-center justify-center">
+                  <div className="h-64 bg-gradient-to-br from-blue-100 to-red-100 flex items-center justify-center">
                     <div className="text-center">
                       <MapPin className="w-16 h-16 text-blue-600 mx-auto mb-4" />
                       <h3 className="text-xl font-bold">Highfield Training Grounds</h3>
@@ -278,7 +278,7 @@ const Contact = () => {
                 </CardContent>
               </Card>
 
-              <Card className="bg-gradient-to-r from-blue-50 to-green-50 border-blue-200">
+              <Card className="bg-gradient-to-r from-blue-50 to-red-50 border-blue-200">
                 <CardContent className="p-6">
                   <div className="flex items-center gap-3 mb-6">
                     <Calendar className="w-8 h-8 text-blue-600" />
@@ -293,14 +293,14 @@ const Contact = () => {
                       'Application Fee ($50)',
                     ].map((item, index) => (
                       <li key={index} className="flex items-center">
-                        <div className="w-6 h-6 rounded-full bg-green-100 text-green-600 flex items-center justify-center mr-3">
+                        <div className="w-6 h-6 rounded-full bg-red-100 text-red-600 flex items-center justify-center mr-3">
                           {index + 1}
                         </div>
                         {item}
                       </li>
                     ))}
                   </ul>
-                  <Button className="w-full bg-gradient-to-r from-blue-600 to-green-500">
+                  <Button className="w-full bg-gradient-to-r from-blue-600 to-red-500">
                     Download Enrollment Form
                   </Button>
                 </CardContent>

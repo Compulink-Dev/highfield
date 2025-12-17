@@ -19,7 +19,7 @@ const FeaturesSection = () => {
       title: 'Government Certified',
       description:
         'Our certifications are recognized nationwide. Your license is valid across Zimbabwe.',
-      color: 'from-green-500 to-green-600',
+      color: 'from-red-500 to-red-600',
     },
     {
       icon: <Truck className="w-6 h-6" />,
@@ -113,7 +113,7 @@ const FeaturesSection = () => {
           initial={{ opacity: 0, scale: 0.95 }}
           whileInView={{ opacity: 1, scale: 1 }}
           viewport={{ once: true }}
-          className="bg-gradient-to-r from-blue-50 to-green-50 border-2 border-blue-100 rounded-2xl p-8"
+          className="bg-gradient-to-r from-blue-50 to-red-50 border-2 border-blue-100 rounded-2xl p-8"
         >
           <div className="grid md:grid-cols-3 gap-8 items-center">
             <div className="text-center">
@@ -121,7 +121,7 @@ const FeaturesSection = () => {
               <div className="text-gray-700">Fast Certification</div>
             </div>
             <div className="text-center">
-              <div className="text-4xl font-bold text-green-600 mb-2">vs</div>
+              <div className="text-4xl font-bold text-red-600 mb-2">vs</div>
               <div className="text-gray-700">Other Schools</div>
             </div>
             <div className="text-center">
@@ -130,7 +130,7 @@ const FeaturesSection = () => {
             </div>
           </div>
           <div className="text-center mt-6">
-            <CheckCircle className="w-6 h-6 inline-block text-green-500 mr-2" />
+            <CheckCircle className="w-6 h-6 inline-block text-red-500 mr-2" />
             <span className="font-semibold text-gray-800">
               Get on the road faster with our intensive 2-week program
             </span>

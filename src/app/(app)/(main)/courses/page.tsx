@@ -101,7 +101,7 @@ const Courses = () => {
   return (
     <div className="min-h-screen bg-gradient-to-b from-gray-50 to-white">
       {/* Hero */}
-      <section className="relative py-20 bg-gradient-to-r from-green-800 to-blue-800">
+      <section className="relative py-20 bg-gradient-to-r from-red-800 to-blue-800">
         <div className="container mx-auto px-4">
           <motion.div
             initial={{ opacity: 0, y: 20 }}
@@ -164,7 +164,7 @@ const Courses = () => {
                         >
                           {course.popular && (
                             <div className="absolute -top-3 left-1/2 transform -translate-x-1/2">
-                              <Badge className="bg-gradient-to-r from-blue-600 to-green-500 text-white px-4 py-1">
+                              <Badge className="bg-gradient-to-r from-blue-600 to-red-500 text-white px-4 py-1">
                                 MOST POPULAR
                               </Badge>
                             </div>
@@ -200,14 +200,14 @@ const Courses = () => {
                                       key={idx}
                                       className="flex items-center text-sm text-gray-700"
                                     >
-                                      <CheckCircle className="w-4 h-4 text-green-500 mr-2 flex-shrink-0" />
+                                      <CheckCircle className="w-4 h-4 text-red-500 mr-2 flex-shrink-0" />
                                       {feature}
                                     </li>
                                   ))}
                                 </ul>
                               </div>
 
-                              <Button className="w-full bg-gradient-to-r from-blue-600 to-green-500 hover:from-blue-700 hover:to-green-600">
+                              <Button className="w-full bg-gradient-to-r from-blue-600 to-red-500 hover:from-blue-700 hover:to-red-600">
                                 Enroll Now
                               </Button>
 
@@ -261,7 +261,7 @@ const Courses = () => {
           </div>
 
           {/* CTA */}
-          <div className="bg-gradient-to-r from-blue-600 to-green-500 rounded-2xl p-8 text-center text-white">
+          <div className="bg-gradient-to-r from-blue-600 to-red-500 rounded-2xl p-8 text-center text-white">
             <Target className="w-16 h-16 mx-auto mb-6" />
             <h2 className="text-3xl font-bold mb-4">Not Sure Which Course is Right For You?</h2>
             <p className="text-xl mb-8 max-w-2xl mx-auto">

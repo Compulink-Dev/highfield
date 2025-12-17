@@ -392,7 +392,7 @@ export const StatusCell: SelectFieldCellComponent = ({ data, cellData }) => {
   return (
     <span
       style={{
-        color: isPublished ? 'green' : 'orange',
+        color: isPublished ? 'red' : 'orange',
         fontWeight: 'bold',
       }}
     >

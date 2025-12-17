@@ -120,7 +120,7 @@ const Testimonials = () => {
 
                   <div className="flex flex-col md:flex-row gap-8 items-center">
                     <div className="flex-shrink-0">
-                      <div className="w-24 h-24 rounded-full bg-gradient-to-br from-blue-500 to-green-400 flex items-center justify-center text-white text-2xl font-bold">
+                      <div className="w-24 h-24 rounded-full bg-gradient-to-br from-blue-500 to-red-400 flex items-center justify-center text-white text-2xl font-bold">
                         {testimonials[current].avatar}
                       </div>
                     </div>

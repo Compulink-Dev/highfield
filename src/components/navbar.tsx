@@ -24,7 +24,7 @@ const Navbar = () => {
         <div className="flex h-16 items-center justify-between">
           {/* Logo */}
           <Link href="/" className="flex items-center space-x-2">
-            <div className="h-10 w-10 rounded-full bg-gradient-to-br from-blue-600 to-green-500" />
+            <div className="h-10 w-10 rounded-full bg-gradient-to-br from-blue-600 to-red-500" />
             <div>
               <h1 className="text-xl font-bold text-gray-900">Highfield Driving School</h1>
               <p className="text-xs text-gray-600">& Truck Training • Harare</p>
@@ -43,7 +43,7 @@ const Navbar = () => {
                 {item.name}
               </Link>
             ))}
-            <Button className="ml-4 bg-gradient-to-r from-blue-600 to-green-500 hover:from-blue-700 hover:to-green-600">
+            <Button className="ml-4 bg-gradient-to-r from-blue-600 to-red-500 hover:from-blue-700 hover:to-red-600">
               <Phone className="mr-2 h-4 w-4" />
               +263 77 305 6222
             </Button>
@@ -83,7 +83,7 @@ const Navbar = () => {
                     <MapPin className="mr-2 h-4 w-4" />
                     Machipisa, Highfield, Harare
                   </div>
-                  <Button className="w-full bg-gradient-to-r from-blue-600 to-green-500">
+                  <Button className="w-full bg-gradient-to-r from-blue-600 to-red-500">
                     <Phone className="mr-2 h-4 w-4" />
                     Call Now
                   </Button>

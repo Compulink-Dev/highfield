@@ -35,7 +35,7 @@ const Footer = () => {
           {/* Brand Column */}
           <div>
             <div className="flex items-center space-x-3 mb-6">
-              <div className="h-12 w-12 rounded-full bg-gradient-to-br from-blue-500 to-green-400" />
+              <div className="h-12 w-12 rounded-full bg-gradient-to-br from-blue-500 to-red-400" />
               <div>
                 <h2 className="text-xl font-bold">Highfield Driving School</h2>
                 <p className="text-gray-400 text-sm">& Truck Training</p>
@@ -113,7 +113,7 @@ const Footer = () => {
               <p className="mb-4 text-gray-300">
                 Limited seats available for December and January intake. Secure your spot today!
               </p>
-              <Button className="w-full bg-gradient-to-r from-blue-600 to-green-500 hover:from-blue-700 hover:to-green-600 mb-3">
+              <Button className="w-full bg-gradient-to-r from-blue-600 to-red-500 hover:from-blue-700 hover:to-red-600 mb-3">
                 <Phone className="mr-2 w-4 h-4" />
                 Call to Enroll
               </Button>

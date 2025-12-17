@@ -79,14 +79,14 @@ const CarLessons = () => {
   return (
     <div className="min-h-screen bg-gradient-to-b from-gray-50 to-white">
       {/* Hero */}
-      <section className="relative py-20 bg-gradient-to-r from-green-700 to-blue-600">
+      <section className="relative py-20 bg-gradient-to-r from-red-700 to-blue-600">
         <div className="container mx-auto px-4">
           <motion.div
             initial={{ opacity: 0, y: 20 }}
             animate={{ opacity: 1, y: 0 }}
             className="max-w-3xl text-white"
           >
-            <Badge className="mb-4 bg-white text-green-700 hover:bg-white">
+            <Badge className="mb-4 bg-white text-red-700 hover:bg-white">
               🚗 MOST AFFORDABLE IN HARARE
             </Badge>
             <h1 className="text-4xl md:text-6xl font-bold mb-6">
@@ -96,7 +96,7 @@ const CarLessons = () => {
               {` Learn to drive confidently with Zimbabwe's most trusted driving school. Our patient instructors and modern training methods ensure you pass your test on the first attempt.`}
             </p>
             <div className="flex flex-wrap gap-4">
-              <Button size="lg" className="bg-white text-green-700 hover:bg-gray-100">
+              <Button size="lg" className="bg-white text-red-700 hover:bg-gray-100">
                 📞 Book Your First Lesson
               </Button>
               <Button
@@ -132,11 +132,11 @@ const CarLessons = () => {
                 viewport={{ once: true }}
               >
                 <Card
-                  className={`h-full border-2 ${pkg.popular ? 'border-green-300 shadow-xl relative' : 'border-gray-200'} hover:shadow-lg transition-all`}
+                  className={`h-full border-2 ${pkg.popular ? 'border-red-300 shadow-xl relative' : 'border-gray-200'} hover:shadow-lg transition-all`}
                 >
                   {pkg.popular && (
                     <div className="absolute -top-4 left-1/2 transform -translate-x-1/2">
-                      <Badge className="bg-gradient-to-r from-green-500 to-blue-500 text-white px-6 py-2">
+                      <Badge className="bg-gradient-to-r from-red-500 to-blue-500 text-white px-6 py-2">
                         RECOMMENDED
                       </Badge>
                     </div>
@@ -148,7 +148,7 @@ const CarLessons = () => {
                         <Clock className="w-4 h-4 mr-1" />
                         {pkg.hours} Hours
                       </div>
-                      <div className="text-3xl font-bold text-green-600">{pkg.price}</div>
+                      <div className="text-3xl font-bold text-red-600">{pkg.price}</div>
                     </div>
                   </CardHeader>
                   <CardContent>
@@ -162,14 +162,14 @@ const CarLessons = () => {
                       <h4 className="font-semibold">Package Includes:</h4>
                       {pkg.features.map((feature, idx) => (
                         <div key={idx} className="flex items-center">
-                          <CheckCircle className="w-4 h-4 text-green-500 mr-2 flex-shrink-0" />
+                          <CheckCircle className="w-4 h-4 text-red-500 mr-2 flex-shrink-0" />
                           <span>{feature}</span>
                         </div>
                       ))}
                     </div>
 
                     <Button
-                      className={`w-full ${pkg.popular ? 'bg-gradient-to-r from-green-500 to-blue-500' : 'bg-gray-800'}`}
+                      className={`w-full ${pkg.popular ? 'bg-gradient-to-r from-red-500 to-blue-500' : 'bg-gray-800'}`}
                     >
                       Select Package
                     </Button>
@@ -212,7 +212,7 @@ const CarLessons = () => {
               </div>
             </div>
 
-            <div className="bg-gradient-to-br from-blue-50 to-green-50 rounded-2xl p-8 border border-blue-200">
+            <div className="bg-gradient-to-br from-blue-50 to-red-50 rounded-2xl p-8 border border-blue-200">
               <div className="flex items-center gap-3 mb-6">
                 <Target className="w-8 h-8 text-blue-600" />
                 <h3 className="text-2xl font-bold">Why Choose Our Car Lessons?</h3>
@@ -228,7 +228,7 @@ const CarLessons = () => {
                   ['Free Pickup', 'We pick you up for lessons in Highfield area'],
                 ].map(([title, desc], index) => (
                   <div key={index} className="flex items-start">
-                    <Award className="w-5 h-5 text-green-500 mr-3 mt-0.5 flex-shrink-0" />
+                    <Award className="w-5 h-5 text-red-500 mr-3 mt-0.5 flex-shrink-0" />
                     <div>
                       <h4 className="font-semibold">{title}</h4>
                       <p className="text-gray-600 text-sm">{desc}</p>
@@ -250,7 +250,7 @@ const CarLessons = () => {
           </div>
 
           {/* CTA */}
-          <div className="text-center bg-gradient-to-r from-blue-600 to-green-500 rounded-2xl p-12 text-white">
+          <div className="text-center bg-gradient-to-r from-blue-600 to-red-500 rounded-2xl p-12 text-white">
             <Users className="w-16 h-16 mx-auto mb-6" />
             <h2 className="text-3xl font-bold mb-4">Start Your Driving Journey Today</h2>
             <p className="text-xl mb-8 max-w-2xl mx-auto">

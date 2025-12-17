@@ -32,7 +32,7 @@ const CallToAction = () => {
 
             <h2 className="text-4xl md:text-5xl font-bold text-white mb-6">
               Become a Certified{' '}
-              <span className="text-transparent bg-clip-text bg-gradient-to-r from-blue-400 to-green-400">
+              <span className="text-transparent bg-clip-text bg-gradient-to-r from-blue-400 to-red-400">
                 Truck Driver
               </span>{' '}
               in Just 2 Weeks
@@ -66,7 +66,7 @@ const CallToAction = () => {
             <div className="flex flex-col sm:flex-row gap-4">
               <Button
                 size="lg"
-                className="bg-gradient-to-r from-blue-600 to-green-500 hover:from-blue-700 hover:to-green-600 text-white"
+                className="bg-gradient-to-r from-blue-600 to-red-500 hover:from-blue-700 hover:to-red-600 text-white"
               >
                 📞 Book Your Seat Now
                 <span className="ml-2 text-sm font-normal">+263 77 305 6222</span>
@@ -108,7 +108,7 @@ const CallToAction = () => {
                   </div>
                   <div className="flex justify-between items-center p-3 bg-white/10 rounded-lg">
                     <span>👨‍🏫 Spots Available</span>
-                    <span className="font-semibold text-green-300">8 of 12 Remaining</span>
+                    <span className="font-semibold text-red-300">8 of 12 Remaining</span>
                   </div>
                   <div className="flex justify-between items-center p-3 bg-white/10 rounded-lg">
                     <span>⏰ Training Hours</span>

@@ -85,7 +85,7 @@ const Instructors = () => {
                   <CardContent className="p-8">
                     <div className="flex flex-col md:flex-row gap-6">
                       <div className="flex-shrink-0">
-                        <div className="w-32 h-32 rounded-full bg-gradient-to-br from-blue-500 to-green-400 flex items-center justify-center text-white text-4xl font-bold">
+                        <div className="w-32 h-32 rounded-full bg-gradient-to-br from-blue-500 to-red-400 flex items-center justify-center text-white text-4xl font-bold">
                           {instructor.name
                             .split(' ')
                             .map((n) => n[0])
@@ -114,10 +114,7 @@ const Instructors = () => {
                         <div className="mb-4">
                           <div className="flex flex-wrap gap-2 mb-3">
                             {instructor.specialty.map((spec, idx) => (
-                              <Badge
-                                key={idx}
-                                className="bg-green-50 text-green-700 hover:bg-green-100"
-                              >
+                              <Badge key={idx} className="bg-red-50 text-red-700 hover:bg-red-100">
                                 <Truck className="w-3 h-3 mr-1" />
                                 {spec}
                               </Badge>
@@ -146,7 +143,7 @@ const Instructors = () => {
           </div>
 
           {/* Training Philosophy */}
-          <div className="bg-gradient-to-r from-blue-50 to-green-50 rounded-2xl p-8 border border-blue-200">
+          <div className="bg-gradient-to-r from-blue-50 to-red-50 rounded-2xl p-8 border border-blue-200">
             <h2 className="text-3xl font-bold mb-8 text-center">Our Training Philosophy</h2>
             <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
               <div className="text-center">
@@ -157,7 +154,7 @@ const Instructors = () => {
                 <p className="text-gray-700">{`We adapt to each student's learning pace and style`}</p>
               </div>
               <div className="text-center">
-                <div className="w-16 h-16 mx-auto rounded-full bg-green-100 flex items-center justify-center text-green-600 mb-4">
+                <div className="w-16 h-16 mx-auto rounded-full bg-red-100 flex items-center justify-center text-red-600 mb-4">
                   <Truck className="w-8 h-8" />
                 </div>
                 <h3 className="text-xl font-bold mb-2">Hands-On Practice</h3>
