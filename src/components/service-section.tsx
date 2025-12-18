@@ -29,7 +29,7 @@ const services = [
       "Become a certified professional truck driver in just 14 days. Zimbabwe's most popular CDL program.",
     icon: Truck,
     features: [
-      'Government Certification',
+      'Free Accomodation',
       'Job Placement Assistance',
       '8+ Truck Models',
       '24/7 Training Hours',
@@ -147,13 +147,13 @@ export function ServicesSection() {
           <Badge className="mb-4 bg-gradient-to-r from-blue-500 to-green-500 text-white px-6 py-2">
             🎯 HIGHFIELD EXCLUSIVE PROGRAMS
           </Badge>
-          <h2 className="text-4xl md:text-5xl font-bold mb-6 bg-gradient-to-r from-gray-900 to-gray-700 bg-clip-text text-transparent">
+          <h2 className="text-2xl md:text-4xl font-bold mb-6 bg-gradient-to-r from-gray-900 to-gray-700 bg-clip-text text-transparent">
             Transform Your Driving Career in{' '}
             <span className="text-transparent bg-clip-text bg-gradient-to-r from-blue-600 to-green-500">
               Weeks, Not Months
             </span>
           </h2>
-          <p className="text-xl text-gray-600 max-w-3xl mx-auto mb-10">
+          <p className="text-sm md:text-xl text-gray-600 max-w-3xl mx-auto mb-10">
             {`Zimbabwe's most trusted driving school with 46,000+ successful graduates. 
             Choose from our certified programs designed for every skill level and career goal.`}
           </p>
@@ -257,7 +257,7 @@ export function ServicesSection() {
                   {/* Stats */}
                   <div className="grid grid-cols-3 gap-3 mb-6">
                     <div className="text-center p-2 bg-gray-50 rounded-lg">
-                      <div className="text-lg font-bold text-gray-900">
+                      <div className="text-sm md:text-lg font-bold text-gray-900">
                         {service.stats.students}
                       </div>
                       <div className="text-xs text-gray-600">Trained</div>
@@ -270,7 +270,7 @@ export function ServicesSection() {
                       <div className="text-xs text-gray-600">Rating</div>
                     </div>
                     <div className="text-center p-2 bg-gray-50 rounded-lg">
-                      <div className="text-lg font-bold text-green-600">
+                      <div className="text-sm md:text-lg font-bold text-green-600">
                         {service.stats.placement}
                       </div>
                       <div className="text-xs text-gray-600">Job Rate</div>
@@ -319,7 +319,7 @@ export function ServicesSection() {
 
                     <div className="grid grid-cols-2 gap-3">
                       <Button
-                        className="w-full bg-gradient-to-r from-blue-600 to-blue-700 hover:from-blue-700 hover:to-blue-800"
+                        className="w-full bg-gradient-to-r from-blue-600 to-blue-700 hover:from-blue-700 hover:to-blue-800 text-xs md:text-sm"
                         onClick={() => {
                           // Navigate to course detail page
                           console.log('Learn more:', service.title)
@@ -330,7 +330,7 @@ export function ServicesSection() {
                       </Button>
                       <Button
                         variant="outline"
-                        className="w-full border-blue-300 text-blue-700 hover:bg-blue-50"
+                        className="w-full border-blue-300 text-blue-700 hover:bg-blue-50 text-xs md:text-sm"
                         onClick={() => {
                           // Open booking modal
                           console.log('Book now:', service.title)
@@ -376,8 +376,10 @@ export function ServicesSection() {
         >
           <div className="grid md:grid-cols-2 gap-8 items-center">
             <div>
-              <h3 className="text-3xl font-bold mb-4">Not Sure Which Program Fits You?</h3>
-              <p className="text-lg text-blue-100 mb-6">
+              <h3 className="text-2xl md:text-3xl font-bold mb-4">
+                Not Sure Which Program Fits You?
+              </h3>
+              <p className="text-sm md:text-lg text-blue-100 mb-6">
                 {`Get a free career consultation with our experts. We'll help you choose the perfect program based on your goals, schedule, and budget.`}
               </p>
               <div className="flex flex-wrap gap-4">
@@ -388,7 +390,7 @@ export function ServicesSection() {
                 <Button
                   size="lg"
                   variant="outline"
-                  className="border-white text-white hover:bg-white/10"
+                  className="border-white text-black hover:bg-white/10"
                 >
                   Compare All Programs
                 </Button>

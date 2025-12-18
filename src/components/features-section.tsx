@@ -15,13 +15,6 @@ const FeaturesSection = () => {
       color: 'from-blue-500 to-blue-600',
     },
     {
-      icon: <Shield className="w-6 h-6" />,
-      title: 'Government Certified',
-      description:
-        'Our certifications are recognized nationwide. Your license is valid across Zimbabwe.',
-      color: 'from-red-500 to-red-600',
-    },
-    {
       icon: <Truck className="w-6 h-6" />,
       title: 'Modern & Old Trucks',
       description:

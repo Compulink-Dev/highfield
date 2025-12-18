@@ -77,6 +77,18 @@ img {
   display: block;
 }
 
+h1 {
+  @apply text-lg md:text-3xl;
+}
+
+h2 {
+  @apply text-2xl md:text-4xl;
+}
+
+p {
+  @apply text-sm md:text-lg;
+}
+
 a {
   color: currentColor;
 

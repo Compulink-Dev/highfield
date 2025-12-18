@@ -13,23 +13,26 @@ const Navbar = () => {
 
   const navItems = [
     { name: 'Home', href: '/' },
-    { name: 'Truck Training', href: '/truck-training', icon: <Truck className="w-4 h-4" /> },
-    { name: 'Car Lessons', href: '/car-lessons', icon: <Car className="w-4 h-4" /> },
+    { name: 'Trucks', href: '/truck-training', icon: <Truck className="w-4 h-4" /> },
+    { name: 'Cars', href: '/car-lessons', icon: <Car className="w-4 h-4" /> },
     { name: 'Courses', href: '/courses' },
     { name: 'Instructors', href: '/instructors' },
     { name: 'Contact', href: '/contact' },
   ]
 
   return (
-    <nav className="sticky top-0 z-50 w-full border-b bg-white/95 backdrop-blur supports-[backdrop-filter]:bg-white/60">
+    <nav className="sticky top-0 z-50 w-full border-b bg-white/95 backdrop-blur supports-[backdrop-filter]:bg-white/60 text-black">
       <div className="container mx-auto px-4">
         <div className="flex h-16 items-center justify-between">
           {/* Logo */}
           <Link href="/" className="flex items-center space-x-2">
-            <div className="h-10 w-10 rounded-full bg-gradient-to-br from-blue-600 to-red-500" />
+            <div className="h-6 md:h-10 w-6 md:w-10 rounded-full bg-gradient-to-br from-blue-600 to-red-500" />
             <div>
-              <h1 className="text-xl font-bold text-gray-900">Highfield Driving School</h1>
-              <p className="text-xs text-gray-600">& Truck Training • Harare</p>
+              <h1 className="text-xl font-bold text-gray-900 hidden md:flex">
+                Highfield Driving School
+              </h1>
+              <h1 className="text-xl font-bold text-gray-900 md:hidden flex">H.D.S</h1>
+              <p className="text-xs text-gray-600 hidden md:flex">& Truck Training • Harare</p>
             </div>
           </Link>
 

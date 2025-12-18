@@ -86,7 +86,7 @@ export function HeroCarousel() {
   }
 
   return (
-    <div className="relative h-[600px] md:h-[700px] overflow-hidden rounded-bl-2xl rounded-br-2xl">
+    <div className="relative h-[600px] md:h-[700px]  overflow-hidden rounded-bl-2xl rounded-br-2xl">
       <AnimatePresence initial={false} custom={direction}>
         <motion.div
           key={currentSlide}
@@ -116,10 +116,10 @@ export function HeroCarousel() {
                 transition={{ delay: 0.3 }}
                 className="max-w-2xl text-white"
               >
-                <h1 className="text-4xl md:text-6xl font-bold mb-4">
+                <h1 className="text-4xl md:text-6xl font-bold mb-4 ">
                   {slides[currentSlide].title}
                 </h1>
-                <h2 className="text-xl md:text-2xl text-primary mb-6">
+                <h2 className="text-xl md:text-2xl text-white mb-6">
                   {slides[currentSlide].subtitle}
                 </h2>
                 <p className="text-lg mb-8 text-gray-200">{slides[currentSlide].description}</p>
@@ -128,7 +128,7 @@ export function HeroCarousel() {
                   <Play className="ml-2 h-4 w-4" />
                 </Button>
 
-                <div className="grid grid-cols-3 gap-4 mt-12">
+                <div className="hidden md:grid grid-cols-3 gap-4 mt-12">
                   {slides[currentSlide].stats.map((stat, index) => (
                     <motion.div
                       key={index}
