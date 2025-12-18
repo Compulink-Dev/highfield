@@ -37,7 +37,7 @@ const Footer = () => {
             <div className="flex items-center space-x-3 mb-6">
               <div className="h-12 w-12 rounded-full bg-gradient-to-br from-blue-500 to-red-400" />
               <div>
-                <h2 className="text-xl font-bold">Highfield Driving School</h2>
+                <h1 className="font-bold text-sm">Highfield Driving School</h1>
                 <p className="text-gray-400 text-sm">& Truck Training</p>
               </div>
             </div>
@@ -49,21 +49,21 @@ const Footer = () => {
               <Button
                 size="icon"
                 variant="outline"
-                className="border-gray-700 text-white hover:bg-blue-600"
+                className="border-gray-700 text-blue-600 hover:bg-blue-600"
               >
                 <Facebook className="w-5 h-5" />
               </Button>
               <Button
                 size="icon"
                 variant="outline"
-                className="border-gray-700 text-white hover:bg-pink-600"
+                className="border-gray-700 text-pink-600 hover:bg-pink-600"
               >
                 <Instagram className="w-5 h-5" />
               </Button>
               <Button
                 size="icon"
                 variant="outline"
-                className="border-gray-700 text-white hover:bg-blue-400"
+                className="border-gray-700 text-blue-400 hover:bg-blue-400"
               >
                 <Twitter className="w-5 h-5" />
               </Button>
@@ -108,7 +108,7 @@ const Footer = () => {
 
           {/* Call to Action */}
           <div>
-            <h3 className="text-lg font-bold mb-6">Book Your Training</h3>
+            <h2 className="text-lg font-bold mb-6">Book Your Training</h2>
             <div className="bg-gray-800/50 rounded-xl p-6 border border-gray-700">
               <p className="mb-4 text-gray-300">
                 Limited seats available for December and January intake. Secure your spot today!

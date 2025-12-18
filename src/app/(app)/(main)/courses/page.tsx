@@ -113,7 +113,7 @@ const Courses = () => {
               Choose from a wide range of certified driving programs designed for every skill level
               and career goal.
             </p>
-            <div className="flex items-center gap-6">
+            <div className="flex flex-col md:flex-row items-center gap-6">
               <div className="flex items-center">
                 <Users className="w-6 h-6 mr-2" />
                 <span>46,000+ Graduates</span>
@@ -236,7 +236,7 @@ const Courses = () => {
                     <th className="text-left py-4">Feature</th>
                     <th className="text-center py-4">Truck Training</th>
                     <th className="text-center py-4">Car Lessons</th>
-                    <th className="text-center py-4">Commercial</th>
+                    <th className="text-center py-4 hidden md:flex">Commercial</th>
                   </tr>
                 </thead>
                 <tbody>
@@ -252,7 +252,7 @@ const Courses = () => {
                       <td className="py-4 font-medium">{feature}</td>
                       <td className="text-center py-4">{truck}</td>
                       <td className="text-center py-4">{car}</td>
-                      <td className="text-center py-4">{commercial}</td>
+                      <td className="text-center py-4 hidden md:flex">{commercial}</td>
                     </tr>
                   ))}
                 </tbody>
@@ -275,7 +275,7 @@ const Courses = () => {
               <Button
                 size="lg"
                 variant="outline"
-                className="border-white text-white hover:bg-white/10"
+                className="border-white text-black hover:bg-white/10"
               >
                 📅 Book Free Assessment
               </Button>

@@ -204,7 +204,7 @@ const TruckTraining = () => {
                 <Button
                   size="lg"
                   variant="outline"
-                  className="border-white text-white hover:bg-white/10"
+                  className="border-white text-black hover:bg-white/10"
                   onClick={() => setShowVideo(true)}
                 >
                   <Play className="w-4 h-4 mr-2" />
@@ -226,7 +226,7 @@ const TruckTraining = () => {
                       <Truck className="w-8 h-8 text-white" />
                     </div>
                     <div>
-                      <h3 className="text-2xl font-bold text-white">2-Week CDL Certification</h3>
+                      <h2 className=" font-bold text-white">2-Week CDL Certification</h2>
                       <p className="text-gray-300">Complete Professional Program</p>
                     </div>
                   </div>
@@ -259,17 +259,16 @@ const TruckTraining = () => {
 
                     <div className="grid grid-cols-2 gap-3">
                       <Button
-                        className="bg-gradient-to-r from-blue-600 to-red-600 hover:from-blue-700 hover:to-red-700"
+                        className="bg-gradient-to-r from-green-600 to-green-900 hover:from-green-400 hover:to-green-700"
                         onClick={() => window.open('https://wa.me/263773056222', '_blank')}
                       >
-                        <Bubbles className="w-4 h-4 mr-2" />
-                        WhatsApp Enquiry
+                        WhatsApp
                       </Button>
                       <Button
                         variant="outline"
-                        className="border-white/30 text-white hover:bg-white/10"
+                        className="border-white/30 text-black hover:bg-white/10"
                       >
-                        <Download className="w-4 h-4 mr-2" />
+                        <Download className="w-4 h-4 mr-2 hidden md:flex" />
                         Brochure
                       </Button>
                     </div>
@@ -281,7 +280,7 @@ const TruckTraining = () => {
               <motion.div
                 animate={{ y: [0, -10, 0] }}
                 transition={{ duration: 2, repeat: Infinity }}
-                className="absolute -right-4 -bottom-4 bg-gradient-to-r from-blue-500 to-red-500 text-white px-6 py-3 rounded-xl shadow-2xl"
+                className="absolute right-4 md:-right-4 -bottom-4 bg-gradient-to-r from-blue-500 to-red-500 text-white px-6 py-3 rounded-xl shadow-2xl"
               >
                 <div className="flex items-center">
                   <Star className="w-4 h-4 mr-2" />
@@ -357,7 +356,7 @@ const TruckTraining = () => {
                       <div className="flex-1">
                         <div className="flex items-start justify-between mb-4">
                           <div>
-                            <h3 className="text-xl font-bold mb-2">{module.title}</h3>
+                            <h1 className="text-xl font-bold mb-2">{module.title}</h1>
                             <Badge variant="outline" className="bg-blue-50 text-blue-700">
                               <Clock className="w-3 h-3 mr-1" />
                               {module.duration}
@@ -522,9 +521,9 @@ const TruckTraining = () => {
                     <div className="w-20 h-20 mx-auto mb-6 rounded-full bg-gradient-to-r from-blue-500 to-red-500 flex items-center justify-center">
                       <Play className="w-10 h-10 text-white" />
                     </div>
-                    <h3 className="text-2xl font-bold text-white mb-2">
+                    <h1 className="text-2xl font-bold text-white mb-2">
                       Truck Training Program Tour
-                    </h3>
+                    </h1>
                     <p className="text-gray-400">
                       See our training facilities and meet our instructors
                     </p>

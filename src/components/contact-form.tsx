@@ -152,7 +152,7 @@ export function ContactForm() {
                 </p>
 
                 {/* Contact Cards */}
-                <div className="grid grid-cols-2 gap-4 mb-10">
+                <div className="grid grid-cols-1 md:grid-cols-2 gap-4 mb-10">
                   {[
                     {
                       icon: Phone,
@@ -207,7 +207,7 @@ export function ContactForm() {
                     <MessageSquare className="w-5 h-5 mr-2" />
                     Why Choose Highfield?
                   </h4>
-                  <div className="grid grid-cols-2 gap-4">
+                  <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
                     {contactStats.map((stat, index) => (
                       <div key={index} className="flex items-center">
                         <div className="w-2 h-2 rounded-full bg-red-400 mr-3" />
@@ -236,7 +236,7 @@ export function ContactForm() {
                         <Send className="w-6 h-6 text-white" />
                       </div>
                       <div>
-                        <h3 className="text-2xl font-bold text-white">Send Us a Message</h3>
+                        <h1 className=" font-bold text-white">Send Us a Message</h1>
                         <p className="text-gray-300">{`We'll respond within 2 hours`}</p>
                       </div>
                     </div>
@@ -353,12 +353,12 @@ export function ContactForm() {
 
                           <div>
                             <FormLabel className="text-white">Quick Contact</FormLabel>
-                            <div className="flex gap-2 mt-2">
+                            <div className="flex flex-col md:flex-row gap-2 mt-2">
                               <Button
                                 type="button"
                                 size="sm"
                                 variant="outline"
-                                className="flex-1 border-white/30 text-white hover:bg-white/10"
+                                className="md:flex-1 border-white/30 text-black hover:bg-white/10"
                                 onClick={() => window.open('https://wa.me/263773056222', '_blank')}
                               >
                                 <Bubbles className="w-4 h-4 mr-2" />
@@ -368,7 +368,7 @@ export function ContactForm() {
                                 type="button"
                                 size="sm"
                                 variant="outline"
-                                className="flex-1 border-white/30 text-white hover:bg-white/10"
+                                className="md:flex-1 border-white/30 text-black hover:bg-white/10"
                                 onClick={() => window.open('tel:+263773056222')}
                               >
                                 <Phone className="w-4 h-4 mr-2" />
@@ -427,7 +427,7 @@ export function ContactForm() {
                 <motion.div
                   animate={{ y: [0, -10, 0] }}
                   transition={{ duration: 2, repeat: Infinity }}
-                  className="absolute -right-4 -bottom-4 bg-gradient-to-r from-blue-500 to-red-500 text-white px-4 py-2 rounded-lg shadow-lg"
+                  className="absolute right-4 md:-right-4 -bottom-4 bg-gradient-to-r from-blue-500 to-red-500 text-white px-4 py-2 rounded-lg shadow-lg"
                 >
                   <div className="flex items-center text-sm">
                     <Clock className="w-3 h-3 mr-1" />

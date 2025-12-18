@@ -189,7 +189,7 @@ const CarLessons = () => {
           {/* Lesson Types */}
           <div className="grid grid-cols-1 md:grid-cols-2 gap-8 mb-16">
             <div>
-              <h3 className="text-2xl font-bold mb-6">Types of Lessons We Offer</h3>
+              <h2 className="font-bold mb-6">Types of Lessons We Offer</h2>
               <div className="space-y-6">
                 {lessonTypes.map((lesson, index) => (
                   <Card key={index} className="border-blue-50">
@@ -264,7 +264,7 @@ const CarLessons = () => {
               <Button
                 size="lg"
                 variant="outline"
-                className="border-white text-white hover:bg-white/10"
+                className="border-white text-black hover:bg-white/10"
               >
                 📅 Schedule Free Assessment
               </Button>

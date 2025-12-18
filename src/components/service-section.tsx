@@ -279,10 +279,10 @@ export function ServicesSection() {
 
                   {/* Features */}
                   <div className="space-y-3 mb-8">
-                    <h4 className="font-semibold text-gray-900 flex items-center">
+                    <h1 className="font-semibold text-gray-900 flex items-center">
                       <Target className="w-4 h-4 mr-2 text-blue-600" />
                       {`What You'll Get:`}
-                    </h4>
+                    </h1>
                     <ul className="space-y-2">
                       {service.features.map((feature, idx) => (
                         <li key={idx} className="flex items-center text-sm">
@@ -376,9 +376,9 @@ export function ServicesSection() {
         >
           <div className="grid md:grid-cols-2 gap-8 items-center">
             <div>
-              <h3 className="text-2xl md:text-3xl font-bold mb-4">
+              <h2 className="text-2xl md:text-3xl font-bold mb-4">
                 Not Sure Which Program Fits You?
-              </h3>
+              </h2>
               <p className="text-sm md:text-lg text-blue-100 mb-6">
                 {`Get a free career consultation with our experts. We'll help you choose the perfect program based on your goals, schedule, and budget.`}
               </p>

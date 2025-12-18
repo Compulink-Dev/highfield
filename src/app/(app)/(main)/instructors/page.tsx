@@ -124,7 +124,7 @@ const Instructors = () => {
 
                         <p className="text-gray-700 mb-6">{instructor.bio}</p>
 
-                        <div className="flex items-center justify-between">
+                        <div className="flex flex-col md:flex-row gap-2 items-center justify-between">
                           <div className="flex items-center text-blue-600 font-medium">
                             <MessageSquare className="w-4 h-4 mr-2" />
                             Contact: {instructor.contact}
