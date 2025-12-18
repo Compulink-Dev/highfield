@@ -44,7 +44,7 @@ const CallToAction = () => {
               Harare.`}
             </p>
 
-            <div className="grid grid-cols-2 gap-4 mb-10">
+            <div className="grid grid-cols-1 md:grid-cols-2 gap-4 mb-10">
               {features.map((feature, index) => (
                 <motion.div
                   key={index}

@@ -195,7 +195,7 @@ const Testimonials = () => {
           initial={{ opacity: 0, y: 30 }}
           whileInView={{ opacity: 1, y: 0 }}
           viewport={{ once: true }}
-          className="mt-16 grid grid-cols-2 md:grid-cols-4 gap-6"
+          className="mt-16 grid-cols-1 space-y-2 md:grid-cols-4 gap-6"
         >
           {[
             { value: '46K+', label: 'Facebook Followers' },
